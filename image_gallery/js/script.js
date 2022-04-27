@@ -26,7 +26,7 @@ allImagesBtn.addEventListener('click', () => {
 searchBtn.addEventListener('click', () => {
     galleryContainerWidth('800px');
     let inputSearch = document.querySelector('.gallery__search input');
-    searchImage(formatList(inputSearch.value.split(' ')));
+    searchImage(formatList(inputSearch.value.normalize('NFD').replace(/[\u0300-\u036f]/g, "").split(' ')));
     galleryAllImages.classList.add('displayNone');
     galleryResults.classList.remove('displayNone');
     allImagesBtn.style.opacity = '.7'
