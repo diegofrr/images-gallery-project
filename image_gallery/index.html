@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Images Gallery</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de imagens com barra de pesquisa que utiliza palavras chave das imagens para realizar as buscas">
+    <meta name="keywords" content="image, gallery">
+    <meta name="author" content="Diêgo Ferreira">
+
+    <!-- CSS import -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Unicons Import -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+</head>
+
+<body>
+    <h1 class="page-title"><i class="uil uil-images"></i>Image Gallery</h1>
+
+    <div class="gallery-container">
+        <div class="gallery__search">
+            <div class="search-block">
+                <input placeholder="Busque suas imagens" type="search" name="pesquisa" id="pesquisa">
+                <label for="pesquisa"><i class="uil uil-search-alt"></i></label>
+            </div>
+            <button>Buscar</button>
+        </div>
+        <button id="allImages"><i class="uil uil-image"></i>Todas imagens</button>
+        <p class="displayNone qnt-imagens"><span>00</span> imagens encontradas.</p>
+        <div class="gallery__images-container">
+
+            <div class="image-block">
+                <img kw="mario kart corrida carro jogo jogos nintendo" src="./images/mario-kart1.jpg" alt="Mario Kart">
+            </div>
+
+            <div class="image-block">
+                <img kw="filme spider man aranha homem marvel" src="./images/spiderman.jpg" alt="Spider Man">
+            </div>
+
+            <div class="image-block">
+                <img kw="jogo jogos nintendo 64 plastico arma army men soldado, tiro" src="./images/armymen.jpg" alt="Army Men">
+            </div>
+
+            <div class="image-block">
+                <img kw="yoshi nintendo corrida mario jogos jogo kart carro burrinha" src="./images/yoshi__mario-kart.jpg" alt="Yoshi Mario Kart">
+            </div>
+
+            <div class="image-block">
+                <img kw="joker dc comics palhaço filme" src="./images/joker1.jpg" alt="Joker">
+            </div>
+
+            <div class="image-block">
+                <img kw="donnie darko universon paralelo coelho filme netflix" src="./images/donniedarko.jpg" alt="Donnie Darko">
+            </div>
+
+            <div class="image-block">
+                <img kw="army jogos jogo men nintendo arma soldado guerra 64" src="./images/armymen2.jpg" alt="Army Men">
+            </div>
+
+            <div class="image-block">
+                <img kw="donnie darko coelho filme universo paralelo" src="./images/donniedarko2.jpg" alt="Donnie Darko">
+            </div>
+
+            <div class="image-block">
+                <img kw="joker dc comics palhaço filme" src="./images/joker2.jpg" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="homem aranha spider man spider marvel" src="./images/spiderman2.jpg" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="luigi mario carro kart corrida jogo jogos nintendo corrida verde" src="./images/luigi.jpg" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="homem aranha spider marvel man spider" src="./images/spiderman3.jpg" alt="">
+            </div>
+
+
+            <!-- Mais imagens aleatórias -->
+            <!-- As 'kw' no plural auxiliam a aceitação dos termos tanto no singular quanto no plural -->
+
+            <div class="image-block">
+                <img kw="combi kombi van carro pneu" src="https://i.picsum.photos/id/183/200/250.jpg?hmac=fYjZnD2wOdG5QJP4NDDsvgUERt_Tyu8U5nFtExY0m_k" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="teia aranha paisagem mato grama" src="https://i.picsum.photos/id/784/200/250.jpg?hmac=eCVe8NLv_SlzLRQcMw03GtExGatXTf6ACgFfg-cD17Q" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="paisagem estrada montanhas pedras" src="https://i.picsum.photos/id/191/200/250.jpg?hmac=RDcpoNfJ8gke4hKt9sEBxaWv2RYkko_8j9vnO76xfkY" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="ferramentas martelos machados luvas alicates madeiras" src="https://i.picsum.photos/id/491/200/250.jpg?hmac=O6cJl6dR-RCFutuUZF7V-ty2V7UuuOP1J8X3T7TpSFo" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="trilhos trem paisagem ponte" src="https://i.picsum.photos/id/204/200/250.jpg?hmac=Twe57o2j1ZHLRhx9O_1KsCYTUqnfOWSSrNsmTOM4qfM" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="canetas escrever escrevendo mão lápis papel caderno mesa" src="https://i.picsum.photos/id/4/200/250.jpg?hmac=J3r0A_UBD9YlCwX28xA5RMlWAdJ4yMFCeOcLDkhEBgw" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="montanhas gelo neve frio alto pico" src="https://i.picsum.photos/id/327/200/250.jpg?hmac=o0crntQd7w6MEvUgd-GlAT3Tgc-N4jFwPusi0dRwm4w" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="pessoas shopping compras gente multidão aglomeração" src="https://i.picsum.photos/id/348/200/250.jpg?hmac=uuyb-0u1NlaB1Iza4Xe-sNEM-LuMvZGqPFLv6jf1pnc" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="notebooks computadores home office tecnologia windows" src="https://i.picsum.photos/id/8/200/250.jpg?hmac=QUDjDqfHITAcDzSpjSC1rIG4CM73dImwb0FiVnRUSME" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="cachorro animal cobertor" src="https://i.picsum.photos/id/1025/200/250.jpg?hmac=uryM1Fbik8VCpUyV5nLyqnd8IndmIx5eRhDo2hd9ydA" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="ursos animal animais feroz" src="https://i.picsum.photos/id/1020/200/250.jpg?hmac=AdaRDBNeM7fikVk8RileyFsBgZn6UynH5TDT0N9kLf0" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="homem capuz sozinho pensando mares praias" src="https://i.picsum.photos/id/338/200/250.jpg?hmac=Q7Iig1DzeVy8Cw11GQaZb_bIp31wY8ONGWakVGJbK38" alt="">
+            </div>
+
+            <div class="image-block">
+                <img kw="homem natureza selva mato acampamento arvores" src="https://i.picsum.photos/id/543/200/250.jpg?hmac=B3uF00zXEeeRrbUjPS8_jLrAy_uc1EnnVC7xoP3B77A" alt="">
+            </div>
+
+        </div>
+
+        <div class="gallery__results displayNone">
+
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
